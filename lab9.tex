@@ -1,7 +1,8 @@
 \documentclass{article}
 
 \usepackage{fancyhdr}
-
+\usepackage{graphicx}
+\usepackage{float}
 \usepackage{geometry}
 \geometry{margin=1in}
 \setlength{\headheight}{49.4pt}
@@ -11,7 +12,7 @@
     \centering
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccc}
     \small University of Florida & \textbf{\small EEL3111C - Circuits} & \small Rottenberg, Cole Harrison\\
-    \small Electrical \& Computer Engineering Dept. & \small Lab 0: Introduction & \small Class \#: 20931 \\
+    \small Electrical \& Computer Engineering Dept. & \small Lab 9: Filters & \small Class \#: 20931 \\
     \small Page \thepage & \small Revision: 0 & \small \today \\
   \end{tabular*}
 }
@@ -69,10 +70,64 @@ Omit this section for the prelab.
     \hrule
 \end{center}
 
-\textbf{1.4.1 First Section of Lab:}
-This is where I start to answer the questions in the lab.
+\textbf{\large 9.5 Pre-Lab Requirements:}
 
-Later on we will start to answer some discussion questions.
+\textbf{9.5.1 LTSpice Simulations:}
+\begin{enumerate}
+    \item Review AC Analysis in LTSpice
+    \item Build a simple lowpass filter, Figure 9.2a, but set R = 10 k Ohm and C =
+    0.001 $\mu F$. Set the voltage source to an AC amplitude of 1 and run an AC
+    analysis with the following settings: Decade, 100, 1, 1Meg. Save an image of
+    the circuit, a plot of the output, and table the 3 dB frequency for submission.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{2simPlot.png}
+        \caption{Plot of Low Pass Filter}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{2simCircuit.png}
+        \caption{Circuit of Low Pass Filter}
+    \end{figure}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        LOW-PASS & 1.6 kHz & $45\deg$ \\
+        \hline
+        \end{tabular}
+    \item High Pass Filter
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{3simPlot.png}
+        \caption{Plot of High Pass Filter}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{3simCircuit.png}
+        \caption{Circuit of High Pass Filter}
+    \end{figure}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        HIGH-PASS & 1.063 kHz & $45\deg$ \\
+        \hline
+        \end{tabular}
+    \item Active Low Pass Filter with $R = 1k \Omega$ and $C = 0.1 \mu F$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{4simPlot.png}
+        \caption{Plot of Active Low Pass Filter}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{4simCircuit.png}
+        \caption{Circuit of Active Low Pass Filter}
+    \end{figure}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        ACTIVE LOW-PASS & 1.59 kHz & $45\deg$ \\
+        \hline
+        \end{tabular}
+
+\end{enumerate}
 
 \begin{center}
     \hrule
