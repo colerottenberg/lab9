@@ -29,7 +29,7 @@
 \end{center}
 % Bullet points on what was not met
 \begin{itemize}
-    \item \textbf{Requirement 1:} The final Breadboard implementation was not met due to a missing $0.1 \mu F$ capacitor. A $0.01\mu F$ capacitor was used instead to demonstrate ability.
+    \item All requirements were met.
 \end{itemize}
 
 \begin{center}
@@ -41,7 +41,7 @@
 \end{center}
 % More Bullet points with filler text
 \begin{itemize}
-    \item \textbf{Problem 1:} Missing capacitor mentioned above...
+    \item No problems were encountered.
 \end{itemize}
 
 \begin{center}
@@ -52,10 +52,8 @@
     \hrule
 \end{center}
 
-Now we start our introduction to our write up
-For your write up, write a brief introduction to what you are doing in the in lab. two to four sentences. 
-Omit this section for the prelab.
-
+In Lab 9, we explore low and high pass RC filters.
+We also define differences between active and passive filters.
 
 \begin{center}
     \hrule
@@ -150,11 +148,44 @@ Omit this section for the prelab.
         \caption{Plot of Active Low Pass Filter}
     \end{figure}
 \end{enumerate}
-\texfbf{\large9.6 In-Lab Requirements:}
-Finished.
 
-\texfbf{\large9.7 Write-Up:}
+\textbf{\large 9.7 Write-Up:}
 
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    & Low-Pass & High-Pass & Active Low-Pass & Active High-Pass\\
+    \hline
+    Simulated & 16 kHz & 1.063 kHz & 1.59 kHz & 482.3 Hz \\
+    \hline
+    Actual & 15.674 kHz & 1.035 kHz & 1.593 kHz & 460.9 Hz \\
+    \hline 
+    Percent Error & 2.03\% & 2.63\% & 0.1\% & 4.44\% \\
+    \hline
+\end{tabular}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{1inlab.png}
+    \caption{Passive Low Pass Filter}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{3inlab.png}
+    \caption{Passive High Pass Filter}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{2inlab.png}
+    \caption{Active Low Pass Filter}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{4inlab.png}
+    \caption{Active High Pass Filter}
+\end{figure}
 \begin{center}
     \hrule
     \vspace{0.2cm}
@@ -164,6 +195,8 @@ Finished.
     \hrule
 \end{center}
 
-This is where I start to answer the questions in the lab. We only need to do this for the write up.
+The purpose of lab 9 is to explore the working characteristics of RC filters.
+However, we explore how to create active filters which can create a gain and a filter in one amplifier.
+As we can see from the previous section, our physical circuits worked within a 5\% tolerance of simulated values.
 
 \end{document}
